@@ -30,8 +30,8 @@ exports.styleguide = {
   stylus: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('release/css/topcoat-text-input.css');
-    var expected = grunt.file.read('test/expected/topcoat-text-input.css');
+    var actual = grunt.file.read('release/css/topcoat-search-input.css');
+    var expected = grunt.file.read('test/expected/topcoat-search-input.css');
     test.equal(actual, expected, 'should generate correct css');
 
     test.done();

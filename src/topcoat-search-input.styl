@@ -1,0 +1,59 @@
+@import input-mixin
+@import utils
+@import variables-shared
+
+/*
+Inputs - Single Line Text
+
+Applying ".*-text-input" to text-based form input elements such as "text", "search", or
+"email" input element adds base styling.
+
+.large-text-input - larger-sized elements that match the height of a ".large-button".
+
+<input type="search" class="dark-text-input {{modifier}}" value="" placeholder="Text input goes here">
+<input type="search" class="light-text-input {{modifier}}" value="" placeholder="Text input goes here">
+
+*/
+
+.light-search-input,
+.dark-search-input
+	input-base()
+	-webkit-appearance: none;
+	padding: 0 0 0 2.7em;
+	border-radius: 30px;
+	background-image: url("../img/search-bg.png");
+	background-position: 1em center;
+	background-repeat: no-repeat;
+
+@import topcoat-dark-search-input
+
+@import topcoat-light-search-input
+
+.dark-search-input:focus,
+.light-search-input:focus
+	background-color #ffffff
+	color #000
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration
+	margin-right 5px
+
+.dark-search-input:focus::-webkit-input-placeholder,
+.light-search-input:focus::-webkit-input-placeholder
+	color var-placeholder-color--input
+
+.large-text-input
+	height 4rem
+	font 1.3rem "Source Sans", helvetica, arial, sans-serif
+	font-weight 200
+
+.dark-search-input.large-text-input,
+.light-search-input.large-text-input
+	padding-left 2.8em
+	border-radius 40px
+	background-position 1.2em center
+
+@import topcoat-media-search-input
+
+.disabled
+	disabled()

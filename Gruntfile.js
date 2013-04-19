@@ -1,14 +1,6 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
-    var getStylusPathData = function(grunt) {
-            var controlsPath = grunt.file.expand('tmp/src/controls/**/src/mixins'),
-                variablesPath = grunt.file.expand('tmp/src/controls/**/src'),
-                utilsPath = grunt.file.expand('tmp/src/utils/**/src/mixins'),
-                pathData = [];
-
-            return pathData.concat(controlsPath, utilsPath, variablesPath);
-        };
 
     // Project configuration.
     grunt.initConfig({
@@ -42,15 +34,14 @@ module.exports = function(grunt) {
             zip: ['tmp/src/*.zip', 'tmp/src/controls/*.zip', 'tmp/src/skins/*.zip', 'tmp/src/utils/*.zip']
         },
 
-        stylus: {
-            compile: {
+        compile: {
+            stylus: {
                 options: {
-                    paths: getStylusPathData(grunt),
-                    import: ['input-mixin', 'utils', 'variables-shared', 'variables-light', 'variables-dark'],
+                    import: ['input-mixin', 'utils', 'variables'],
                     compress: false
                 },
                 files: {
-                    'release/css/topcoat-search-input.css': ['src/copyright.styl', 'src/topcoat-search-input.styl']
+                    'release/css/topcoat-search-input.css': ['src/copyright.styl', 'src/topcoat-search-input.styl', 'test/fixtures/icon.styl']
                 }
             }
         },
@@ -93,8 +84,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
+    grunt.loadTasks('tasks');
+
     // Default task.
-    grunt.registerTask('default', ['clean', 'topcoat', 'build', 'clean']);
-    grunt.registerTask('build', ['stylus', 'cssmin', 'jade', 'nodeunit']);
+    grunt.registerTask('default', ['clean', 'topcoat', 'build']);
+    grunt.registerTask('build', ['compile', 'cssmin', 'jade', 'nodeunit']);
 
 };

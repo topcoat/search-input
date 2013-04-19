@@ -1,6 +1,4 @@
-/*global module:false*/
-module.exports = function(grunt) {
-
+/*global module:false*/ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
@@ -19,10 +17,6 @@ module.exports = function(grunt) {
         },
 
         unzip: {
-            controls: {
-                src: 'tmp/src/controls/*.zip',
-                dest: 'tmp/src/controls'
-            },
             utils: {
                 src: 'tmp/src/utils/*.zip',
                 dest: 'tmp/src/utils'
@@ -31,7 +25,7 @@ module.exports = function(grunt) {
 
         clean: {
             tmp: ['tmp'],
-            zip: ['tmp/src/*.zip', 'tmp/src/controls/*.zip', 'tmp/src/skins/*.zip', 'tmp/src/utils/*.zip']
+            zip: ['tmp/src/utils/*.zip']
         },
 
         compile: {
@@ -41,7 +35,7 @@ module.exports = function(grunt) {
                     compress: false
                 },
                 files: {
-                    'release/css/topcoat-search-input.css': ['src/copyright.styl', 'src/topcoat-search-input.styl', 'test/fixtures/icon.styl']
+                    'release/css/search-input.css': ['src/copyright.styl', 'src/search-input.styl', 'media-search-input.styl']
                 }
             }
         },

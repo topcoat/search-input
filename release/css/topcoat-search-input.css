@@ -14,19 +14,19 @@ limitations under the License.
 */
 
 /*
-Inputs - Single Line Text
+ TopCoat Icon Button
+ -------------------
 
-Applying ".*-text-input" to text-based form input elements such as "text", "search", or
-"email" input element adds base styling.
+ :disabled - Disabled state
 
-.large-text-input - larger-sized elements that match the height of a ".large-button".
+ .is-disabled - Simulates a disabled state
 
-<input type="search" class="dark-text-input {{modifier}}" value="" placeholder="Text input goes here">
-<input type="search" class="light-text-input {{modifier}}" value="" placeholder="Text input goes here">
+    <input type="search" value="" placeholder="Text input goes here">
+    <input type="search is-disabled" value="" placeholder="Text input goes here">
 
-*/
-.topcoat-search-input,
-.topcoat-search-input--large {
+ */
+.search-input,
+.search-input--large {
   vertical-align: top;
   box-sizing: border-box;
   padding: 0 1.25rem;
@@ -47,32 +47,38 @@ Applying ".*-text-input" to text-based form input elements such as "text", "sear
   background-position: 1em center;
   background-repeat: no-repeat;
 }
-.topcoat-search-input:focus,
-.topcoat-search-input--large:focus {
+.search-input:focus,
+.search-input--large:focus {
   background-color: #fff;
   color: var-color-focus;
 }
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-decoration {
   margin-right: 5px;
 }
-.dark-search-input:focus::-webkit-input-placeholder,
-.light-search-input:focus::-webkit-input-placeholder {
+.search-input:focus::-webkit-input-placeholder,
+.search-input:focus::-webkit-input-placeholder {
   color: var-placeholder-color--input;
 }
+.search-input:disabled,
+.search-input.is-disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
 /*
- TopCoat Large Text Input
+ TopCoat Large Search Input
  ------------------------
 
-TopCoat large text input control
+ :disabled - Disabled state
 
-:disabled - Disabled state
-.is-disabled - Simulates a disabled state on mobile devices
+ .is-disabled - Simulates a disabled state
 
     <input type="search" class="topcoat-text-input--large" value="" placeholder="Text input goes here">
     <input type="search" class="topcoat-text-input--large is-disabled" value="" placeholder="Text input goes here">
+    
 */
-.topcoat-search-input--large {
+.search-input--large {
   height: 4rem;
   font-size: 1.3rem;
   font-weight: 200;
@@ -81,12 +87,13 @@ TopCoat large text input control
   background-position: 1.2em center;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-resolution: 192dpi) {
-  .topcoat-search-input {
+  .search-input {
     background-image: url("../img/search-bg2x.png");
     background-size: 20px;
   }
 }
-.disabled {
+.search-input--large:disabled,
+.search-input--large.is-disabled {
   opacity: 0.3;
   cursor: default;
   pointer-events: none;

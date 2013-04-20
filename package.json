@@ -1,29 +1,27 @@
 {
-  "name": "search-input",
+  "name": "textarea",
   "version": "0.0.0",
   "description": "TopCoat search input",
-  "directories": {
-    "test": "test"
-  },
+  "main": "search-input.css",
   "topcoat": {
     "controls": {
-      "topcoat/input-base": "",
-      "topcoat/theme": ""
+      "topcoat/utils": ""
     },
     "utils": {
-      "topcoat/utils": ""
+      "topcoat/input-base": ""
     }
+  },
+  "directories": {
+    "test": "test"
   },
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/topcoat/search-input.git"
+    "url": "git@github.com:topcoat/search-input.git"
   },
   "keywords": [
-    "search",
-    "input",
     "css",
     "topcoat",
     "base",
@@ -32,15 +30,15 @@
   "author": "@an_rei Andrei Oprea",
   "license": "Apache",
   "devDependencies": {
-    "grunt-contrib-stylus": "~0.5.0",
-    "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.3.1",
     "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-contrib-jade": "~0.5.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-stylus": "~0.5.0",
+    "grunt-contrib-clean": "~0.4.1",
     "grunt-zip": "~0.7.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-topcoat": "0.0.5",
     "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-topcoat": "0.0.5",
+    "grunt-contrib-jade": "~0.5.0",
     "debug": "~0.7.2"
   }
 }

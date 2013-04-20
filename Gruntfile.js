@@ -1,4 +1,6 @@
-/*global module:false*/ module.exports = function(grunt) {
+/*global module:false*/
+module.exports = function(grunt) {
+
 
     // Project configuration.
     grunt.initConfig({
@@ -17,6 +19,10 @@
         },
 
         unzip: {
+            controls: {
+                src: 'tmp/src/controls/*.zip',
+                dest: 'tmp/src/controls'
+            },
             utils: {
                 src: 'tmp/src/utils/*.zip',
                 dest: 'tmp/src/utils'
@@ -25,7 +31,7 @@
 
         clean: {
             tmp: ['tmp'],
-            zip: ['tmp/src/utils/*.zip']
+            zip: ['tmp/src/*.zip', 'tmp/src/controls/*.zip', 'tmp/src/skins/*.zip', 'tmp/src/utils/*.zip']
         },
 
         compile: {
@@ -35,7 +41,7 @@
                     compress: false
                 },
                 files: {
-                    'release/css/search-input.css': ['src/copyright.styl', 'src/search-input.styl', 'media-search-input.styl']
+                    'release/css/topcoat-search-input.css': ['src/copyright.styl', 'src/search-input.styl']
                 }
             }
         },
@@ -81,7 +87,7 @@
     grunt.loadTasks('tasks');
 
     // Default task.
-    grunt.registerTask('default', ['clean', 'topcoat', 'build']);
+grunt.registerTask('default', ['clean', 'topcoat', 'build']);
     grunt.registerTask('build', ['compile', 'cssmin', 'jade', 'nodeunit']);
 
 };

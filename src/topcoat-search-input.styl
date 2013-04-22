@@ -1,7 +1,7 @@
 @import input-mixin
 
 /*
- TopCoat Icon Button
+ TopCoat Search Input
  -------------------
 
  :disabled - Disabled state
@@ -13,7 +13,7 @@
 
  */
 
-.search-input
+.topcoat-search-input
     input-base()
     border var-border
     background-color var-background-color
@@ -26,20 +26,20 @@
     background-position 1em center
     background-repeat no-repeat
 
-.search-input:focus
+.topcoat-search-input:focus
     background-color var-background-color--focus
     color var-color-focus
 
-.search-input::-webkit-search-cancel-button,
-.search-input::-webkit-search-decoration
+.topcoat-search-input::-webkit-search-cancel-button,
+.topcoat-search-input::-webkit-search-decoration
     margin-right 5px
 
-.search-input:focus::-webkit-input-placeholder,
-.search-input:focus::-webkit-input-placeholder
+.topcoat-search-input:focus::-webkit-input-placeholder,
+.topcoat-search-input:focus::-webkit-input-placeholder
     color var-placeholder-color--input
 
-.search-input:disabled,
-.search-input.is-disabled
+.topcoat-search-input:disabled,
+.topcoat-search-input.is-disabled
     disabled()
 
 /*
@@ -55,8 +55,8 @@
     
 */
 
-.search-input--large
-    @extend .search-input
+.topcoat-search-input--large
+    @extend .topcoat-search-input
     height var-height--large
     font-size var-font-size--large
     font-weight var-font-weight
@@ -64,11 +64,11 @@
     border-radius var-border-radius--large
     background-position 1.2em center
 
-.search-input--large:focus
-    @extend .search-input:focus
+.topcoat-search-input--large:focus
+    @extend .topcoat-search-input:focus
 
-@import media-search-input
+@import topcoat-media-search-input
 
-.search-input--large:disabled,
-.search-input--large.is-disabled
+.topcoat-search-input--large:disabled,
+.topcoat-search-input--large.is-disabled
     disabled()

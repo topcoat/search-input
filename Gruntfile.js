@@ -41,7 +41,7 @@ module.exports = function(grunt) {
                     compress: false
                 },
                 files: {
-                    'release/css/topcoat-search-input.css': ['src/copyright.styl', 'src/search-input.styl']
+                    'release/css/topcoat-search-input.css': ['src/copyright.styl', 'src/topcoat-search-input.styl']
                 }
             }
         },

@@ -14,7 +14,7 @@ limitations under the License.
 */
 
 /*
- TopCoat Icon Button
+ TopCoat Search Input
  -------------------
 
  :disabled - Disabled state
@@ -25,8 +25,8 @@ limitations under the License.
     <input type="search is-disabled" value="" placeholder="Text input goes here">
 
  */
-.search-input,
-.search-input--large {
+.topcoat-search-input,
+.topcoat-search-input--large {
   vertical-align: top;
   box-sizing: border-box;
   padding: 0 1.25rem;
@@ -47,21 +47,21 @@ limitations under the License.
   background-position: 1em center;
   background-repeat: no-repeat;
 }
-.search-input:focus,
-.search-input--large:focus {
+.topcoat-search-input:focus,
+.topcoat-search-input--large:focus {
   background-color: #fff;
   color: var-color-focus;
 }
-.search-input::-webkit-search-cancel-button,
-.search-input::-webkit-search-decoration {
+.topcoat-search-input::-webkit-search-cancel-button,
+.topcoat-search-input::-webkit-search-decoration {
   margin-right: 5px;
 }
-.search-input:focus::-webkit-input-placeholder,
-.search-input:focus::-webkit-input-placeholder {
+.topcoat-search-input:focus::-webkit-input-placeholder,
+.topcoat-search-input:focus::-webkit-input-placeholder {
   color: var-placeholder-color--input;
 }
-.search-input:disabled,
-.search-input.is-disabled {
+.topcoat-search-input:disabled,
+.topcoat-search-input.is-disabled {
   opacity: 0.3;
   cursor: default;
   pointer-events: none;
@@ -78,7 +78,7 @@ limitations under the License.
     <input type="search" class="topcoat-text-input--large is-disabled" value="" placeholder="Text input goes here">
     
 */
-.search-input--large {
+.topcoat-search-input--large {
   height: 4rem;
   font-size: 1.3rem;
   font-weight: 200;
@@ -87,13 +87,13 @@ limitations under the License.
   background-position: 1.2em center;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-resolution: 192dpi) {
-  .search-input {
+  .topcoat-search-input {
     background-image: url("../img/search-bg2x.png");
     background-size: 20px;
   }
 }
-.search-input--large:disabled,
-.search-input--large.is-disabled {
+.topcoat-search-input--large:disabled,
+.topcoat-search-input--large.is-disabled {
   opacity: 0.3;
   cursor: default;
   pointer-events: none;

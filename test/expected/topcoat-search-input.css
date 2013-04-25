@@ -14,15 +14,15 @@ limitations under the License.
 */
 
 /*
- TopCoat Search Input
- -------------------
+ Search Input
+ ------------
 
  :disabled - Disabled state
 
  .is-disabled - Simulates a disabled state
 
-    <input type="search" value="" placeholder="Text input goes here">
-    <input type="search is-disabled" value="" placeholder="Text input goes here">
+    <input type="search" value="" placeholder="search" class="topcoat-search-input">
+    <input type="search is-disabled" value="" placeholder="search" class="topcoat-search-input">
 
  */
 .topcoat-search-input,
@@ -67,16 +67,16 @@ limitations under the License.
   pointer-events: none;
 }
 /*
- TopCoat Large Search Input
- ------------------------
+ Large Search Input
+ ------------------
 
  :disabled - Disabled state
 
  .is-disabled - Simulates a disabled state
 
-    <input type="search" class="topcoat-text-input--large" value="" placeholder="Text input goes here">
-    <input type="search" class="topcoat-text-input--large is-disabled" value="" placeholder="Text input goes here">
-    
+    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large">
+    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large .is-disabled">
+
 */
 .topcoat-search-input--large {
   height: 4rem;

@@ -43,9 +43,10 @@ limitations under the License.
   -webkit-appearance: none;
   padding: 0 0 0 2.7em;
   border-radius: 30px;
-  background-image: url("../../test/fixtures/img/search-bg.png");
+  background-image: url("../../test/fixtures/img/search.svg");
   background-position: 1em center;
   background-repeat: no-repeat;
+  background-size: 16px;
 }
 .topcoat-search-input:focus,
 .topcoat-search-input--large:focus {
@@ -85,12 +86,7 @@ limitations under the License.
   padding-left: 2.8em;
   border-radius: 40px;
   background-position: 1.2em center;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-resolution: 192dpi) {
-  .topcoat-search-input {
-    background-image: url("../img/search-bg2x.png");
-    background-size: 20px;
-  }
+  background-size: 1.3rem;
 }
 .topcoat-search-input--large:disabled,
 .topcoat-search-input--large.is-disabled {

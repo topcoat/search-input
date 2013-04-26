@@ -1,6 +1,6 @@
 {
-  "name": "textarea",
-  "version": "0.0.0",
+  "name": "search-input",
+  "version": "0.1.0",
   "description": "TopCoat search input",
   "main": "search-input.css",
   "topcoat": {

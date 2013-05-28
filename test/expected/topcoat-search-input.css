@@ -30,10 +30,11 @@ limitations under the License.
   vertical-align: top;
   box-sizing: border-box;
   padding: 0 1.25rem;
-  border-radius: 6px;
-  margin: 5px;
-  height: 3rem;
-  font: inherit;
+  border-radius: 30px;
+  margin: 5px 10px 5px 0;
+  height: 3em;
+  font-size: 16px;
+  font-family: "Source Sans", helvetica, arial, sans-serif;
   font-weight: 200;
   outline: none;
   border: 1px solid #a5a8a8;

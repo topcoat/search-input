@@ -52,7 +52,7 @@ limitations under the License.
 .topcoat-search-input:focus,
 .topcoat-search-input--large:focus {
   background-color: #fff;
-  color: var-color-focus;
+  color: #000;
 }
 .topcoat-search-input::-webkit-search-cancel-button,
 .topcoat-search-input::-webkit-search-decoration {

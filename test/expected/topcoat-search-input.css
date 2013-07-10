@@ -33,9 +33,6 @@ limitations under the License.
   border-radius: 30px;
   margin: 5px 10px 5px 0;
   height: 3em;
-  font-size: 16px;
-  font-family: "Source Sans", helvetica, arial, sans-serif;
-  font-weight: 200;
   outline: none;
   border: 1px solid #a5a8a8;
   background-color: #f2f3f3;
@@ -60,7 +57,7 @@ limitations under the License.
 }
 .topcoat-search-input:focus::-webkit-input-placeholder,
 .topcoat-search-input:focus::-webkit-input-placeholder {
-  color: var-placeholder-color--input;
+  color: #c6c8c8;
 }
 .topcoat-search-input:disabled,
 .topcoat-search-input.is-disabled {

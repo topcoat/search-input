@@ -7,10 +7,6 @@ body {
   font-weight: 200;
   text-rendering: optimizeLegibility;
 }
-:focus {
-  outline-color: transparent;
-  outline-style: none;
-}
 @font-face {
   font-family: "Source Sans";
   src: url("../font/SourceSansPro-Regular.otf");

@@ -47,7 +47,7 @@ body {
  .is-disabled - Simulates a disabled state
 
     <input type="search" value="" placeholder="search" class="topcoat-search-input">
-    <input type="search is-disabled" value="" placeholder="search" class="topcoat-search-input">
+    <input type="search" value="" placeholder="search" class="topcoat-search-input is-disabled">
 
  */
 .topcoat-search-input,
@@ -103,7 +103,7 @@ body {
  .is-disabled - Simulates a disabled state
 
     <input type="search"  value="" placeholder="search" class="topcoat-search-input--large">
-    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large .is-disabled">
+    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large is-disabled">
 
 */
 .topcoat-search-input--large {

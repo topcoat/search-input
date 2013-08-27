@@ -15,7 +15,8 @@
 * limitations under the License.
 *
 */
-@import input-mixin
+
+@import search-input
 /* topdoc
   name: Search Input
   description: A text input designed for searching.
@@ -35,13 +36,12 @@
 */
 
 .topcoat-search-input
-  input-base()
+  @extend .search-input
   height var-height
   border var-border
   background-color var-background-color
   box-shadow var-box-shadow--down
   color var-color
-  -webkit-appearance none
   padding: 0 0 0 2.7em
   border-radius var-border-radius--large
   background-image var-background-image--search-input
@@ -64,8 +64,6 @@
 .topcoat-search-input:focus::-webkit-input-placeholder
   color var-placeholder-color--input
 
-.topcoat-search-input:disabled
-  disabled()
 /* topdoc
   name: Large Search Input
   description: A large text input designed for searching.
@@ -97,7 +95,3 @@
 
 .topcoat-search-input--large:focus
   @extend .topcoat-search-input:focus
-
-.topcoat-search-input--large:disabled
-  disabled()
-

@@ -1,0 +1,95 @@
+/**
+*
+* Copyright 2012 Adobe Systems Inc.;
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
+.search-input,
+.topcoat-search-input,
+.topcoat-search-input--large {
+  -webkit-appearance: none;
+}
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+/*
+ Search Input
+ ------------
+
+ :disabled - Disabled state
+
+ .is-disabled - Simulates a disabled state
+
+    <input type="search" value="" placeholder="search" class="topcoat-search-input">
+    <input type="search" value="" placeholder="search" class="topcoat-search-input is-disabled">
+
+ */
+.topcoat-search-input,
+.topcoat-search-input--large {
+  height: 2rem;
+  border: 1px solid rgba(0,0,0,0.36);
+  background-color: #595b5b;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  color: #c6c8c8;
+  padding: 0 0 0 2.7em;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-image: url("../img/search_light.svg");
+  background-position: 1em center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 12px;
+  -moz-background-size: 12px;
+  background-size: 12px;
+}
+.topcoat-search-input:focus,
+.topcoat-search-input--large:focus {
+  background-image: url("../img/search_dark.svg");
+  background-color: #fff;
+  color: #000;
+}
+.topcoat-search-input::-webkit-search-cancel-button,
+.topcoat-search-input::-webkit-search-decoration,
+.topcoat-search-input--large::-webkit-search-cancel-button,
+.topcoat-search-input--large::-webkit-search-decoration {
+  margin-right: 5px;
+}
+.topcoat-search-input:focus::-webkit-input-placeholder,
+.topcoat-search-input:focus::-webkit-input-placeholder {
+  color: #c6c8c8;
+}
+/*
+ Large Search Input
+ ------------------
+
+ :disabled - Disabled state
+
+ .is-disabled - Simulates a disabled state
+
+    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large">
+    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large is-disabled">
+
+*/
+.topcoat-search-input--large {
+  height: 2.6rem;
+  font-size: 1.167rem;
+  font-weight: 200;
+  padding-left: 2.8em;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  background-position: 1.2em center;
+  -webkit-background-size: 1.167rem;
+  -moz-background-size: 1.167rem;
+  background-size: 1.167rem;
+}

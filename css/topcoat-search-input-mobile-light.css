@@ -42,21 +42,21 @@
 */
 .topcoat-search-input,
 .topcoat-search-input--large {
-  height: 2rem;
-  border: 1px solid rgba(0,0,0,0.36);
-  background-color: #595b5b;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
-  box-shadow: inset 0 1px rgba(0,0,0,0.18);
-  color: #c6c8c8;
+  height: 3rem;
+  border: 1px solid #a5a8a8;
+  background-color: #e5e9e8;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  color: #454545;
   padding: 0 0 0 2.7em;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  background-image: url("../img/search_light.svg");
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-image: url("../img/search.svg");
   background-position: 1em center;
   background-repeat: no-repeat;
-  -webkit-background-size: 12px;
-  -moz-background-size: 12px;
-  background-size: 12px;
+  -webkit-background-size: 16px;
+  -moz-background-size: 16px;
+  background-size: 16px;
 }
 .topcoat-search-input:focus,
 .topcoat-search-input--large:focus {
@@ -93,14 +93,14 @@
     - large
 */
 .topcoat-search-input--large {
-  height: 2.6rem;
-  font-size: 1.167rem;
+  height: 4rem;
+  font-size: 1.3rem;
   font-weight: 200;
   padding-left: 2.8em;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
   background-position: 1.2em center;
-  -webkit-background-size: 1.167rem;
-  -moz-background-size: 1.167rem;
-  background-size: 1.167rem;
+  -webkit-background-size: 1.3rem;
+  -moz-background-size: 1.3rem;
+  background-size: 1.3rem;
 }

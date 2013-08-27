@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Topcoat</title>
+    <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../css/topcoat-search-input-desktop-light.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/brackets.css"><!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body class="light">
+    <div id="wrapper">
+      <div class="max-width">
+        <div id="sideNav">
+          <nav class="site">
+            <ul>
+              <li><a href="http://topcoat.io">Home</a></li>
+            </ul>
+          </nav>
+          <div class="combo">
+            <select class="docNav">
+              <option value="index.html">Topcoat Search Input Desktop Dark</option>
+              <option value="topcoat-search-input-desktop-light.html" selected="selected">Topcoat Search Input Desktop Light</option>
+              <option value="topcoat-search-input-mobile-dark.html">Topcoat Search Input Mobile Dark</option>
+              <option value="topcoat-search-input-mobile-light.html">Topcoat Search Input Mobile Light</option>
+            </select>
+          </div>
+          <div id="pageNav">
+            <ul>
+              <li><a href="#search-input">Search Input</a></li>
+              <li><a href="#large-searchinput">Large Search Input</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="site">
+        <header id="main-header">
+          <div class="max-width">
+            <hgroup>
+              <h1><a href="http://topcoat.io">Topcoat</a></h1>
+              <p>CSS for clean and fast web apps</p>
+            </hgroup>
+            <nav>
+              <ul>
+              </ul>
+            </nav><a id="slide-menu-button" class="topcoat-icon-button--large--quiet"><span class="topcoat-icon--large topcoat-icon--menu-stack"></span></a>
+          </div>
+        </header>
+        <div id="content" class="max-width">
+          <article id="search-input" class="component">
+            <header>
+              <h2>Search Input</h2>
+            </header>
+            <section class="component"><input type="search" value="" placeholder="search" class="topcoat-search-input"><input type="search" value="" placeholder="search" class="topcoat-search-input" disabled></section>
+            <footer>
+              <div class="showcode"><a href="#">Show code snippets</a></div>
+              <section class="code">
+                <div>
+                  <h3>HTML</h3>
+                  <pre class="html"><code data-language="html">&lt;input type=&quot;search&quot; value=&quot;&quot; placeholder=&quot;search&quot; class=&quot;topcoat-search-input&quot;&gt;&lt;input type=&quot;search&quot; value=&quot;&quot; placeholder=&quot;search&quot; class=&quot;topcoat-search-input&quot; disabled&gt;</code></pre>
+                </div>
+                <div>
+                  <h3>CSS</h3>
+                  <pre class="css"><code data-language="css">.topcoat-search-input,
+.topcoat-search-input--large {
+  height: 2rem;
+  border: 1px solid #a5a8a8;
+  background-color: #e5e9e8;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  color: #454545;
+  padding: 0 0 0 2.7em;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-image: url(&quot;../img/search.svg&quot;);
+  background-position: 1em center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 12px;
+  -moz-background-size: 12px;
+  background-size: 12px;
+}
+.topcoat-search-input:focus,
+.topcoat-search-input--large:focus {
+  background-image: url(&quot;../img/search_dark.svg&quot;);
+  background-color: #fff;
+  color: #000;
+}
+.topcoat-search-input::-webkit-search-cancel-button,
+.topcoat-search-input::-webkit-search-decoration,
+.topcoat-search-input--large::-webkit-search-cancel-button,
+.topcoat-search-input--large::-webkit-search-decoration {
+  margin-right: 5px;
+}
+.topcoat-search-input:focus::-webkit-input-placeholder,
+.topcoat-search-input:focus::-webkit-input-placeholder {
+  color: #c6c8c8;
+}</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+          <article id="large-searchinput" class="component">
+            <header>
+              <h2>Large Search Input</h2>
+            </header>
+            <section class="component"><input type="search" value="" placeholder="search" class="topcoat-search-input--large"><input type="search" value="" placeholder="search" class="topcoat-search-input--large" disabled></section>
+            <footer>
+              <div class="showcode"><a href="#">Show code snippets</a></div>
+              <section class="code">
+                <div>
+                  <h3>HTML</h3>
+                  <pre class="html"><code data-language="html">&lt;input type=&quot;search&quot; value=&quot;&quot; placeholder=&quot;search&quot; class=&quot;topcoat-search-input--large&quot;&gt;&lt;input type=&quot;search&quot; value=&quot;&quot; placeholder=&quot;search&quot; class=&quot;topcoat-search-input--large&quot; disabled&gt;</code></pre>
+                </div>
+                <div>
+                  <h3>CSS</h3>
+                  <pre class="css"><code data-language="css">.topcoat-search-input--large {
+  height: 2.6rem;
+  font-size: 1.167rem;
+  font-weight: 200;
+  padding-left: 2.8em;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  background-position: 1.2em center;
+  -webkit-background-size: 1.167rem;
+  -moz-background-size: 1.167rem;
+  background-size: 1.167rem;
+}
+</code></pre>
+                </div>
+              </section>
+            </footer>
+          </article>
+        </div>
+        <footer></footer>
+      </div>
+    </div>
+    <script src="js/rainbow-custom.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

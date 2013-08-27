@@ -15,8 +15,14 @@
 * limitations under the License.
 *
 */
-
-@import search-input
+.search-input,
+.topcoat-search-input,
+.topcoat-search-input--large {
+  -webkit-appearance: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
 /* topdoc
   name: Search Input
   description: A text input designed for searching.
@@ -34,36 +40,40 @@
     - search
     - form
 */
-
-.topcoat-search-input
-  @extend .search-input
-  height var-height
-  border var-border
-  background-color var-background-color
-  box-shadow var-box-shadow--down
-  color var-color
-  padding: 0 0 0 2.7em
-  border-radius var-border-radius--large
-  background-image var-background-image--search-input
-  background-position 1em center
-  background-repeat no-repeat
-  background-size var-font-size
-
-.topcoat-search-input:focus
-  background-image var-background-image-alt--search-input
-  background-color var-background-color--focus
-  color var-color--focus
-
+.topcoat-search-input,
+.topcoat-search-input--large {
+  height: 2rem;
+  border: 1px solid #a5a8a8;
+  background-color: #e5e9e8;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  color: #454545;
+  padding: 0 0 0 2.7em;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-image: url("../img/search.svg");
+  background-position: 1em center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 12px;
+  -moz-background-size: 12px;
+  background-size: 12px;
+}
+.topcoat-search-input:focus,
+.topcoat-search-input--large:focus {
+  background-image: url("../img/search_dark.svg");
+  background-color: #fff;
+  color: #000;
+}
 .topcoat-search-input::-webkit-search-cancel-button,
 .topcoat-search-input::-webkit-search-decoration,
 .topcoat-search-input--large::-webkit-search-cancel-button,
-.topcoat-search-input--large::-webkit-search-decoration
-  margin-right 5px
-
+.topcoat-search-input--large::-webkit-search-decoration {
+  margin-right: 5px;
+}
 .topcoat-search-input:focus::-webkit-input-placeholder,
-.topcoat-search-input:focus::-webkit-input-placeholder
-  color var-placeholder-color--input
-
+.topcoat-search-input:focus::-webkit-input-placeholder {
+  color: #c6c8c8;
+}
 /* topdoc
   name: Large Search Input
   description: A large text input designed for searching.
@@ -82,16 +92,15 @@
     - form
     - large
 */
-
-.topcoat-search-input--large
-  @extend .topcoat-search-input
-  height var-height--large
-  font-size var-font-size--large
-  font-weight var-font-weight
-  padding-left 2.8em
-  border-radius var-border-radius--huge
-  background-position 1.2em center
-  background-size var-font-size--large
-
-.topcoat-search-input--large:focus
-  @extend .topcoat-search-input:focus
+.topcoat-search-input--large {
+  height: 2.6rem;
+  font-size: 1.167rem;
+  font-weight: 200;
+  padding-left: 2.8em;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  background-position: 1.2em center;
+  -webkit-background-size: 1.167rem;
+  -moz-background-size: 1.167rem;
+  background-size: 1.167rem;
+}

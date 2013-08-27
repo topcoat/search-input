@@ -38,18 +38,23 @@ body {
 * limitations under the License.
 *
 */
-/*
- Search Input
- ------------
-
- :disabled - Disabled state
-
- .is-disabled - Simulates a disabled state
-
+/* topdoc
+  name: Search Input
+  description: A text input designed for searching.
+  modifiers:
+    :disabled: Disabled state
+  markup:
     <input type="search" value="" placeholder="search" class="topcoat-search-input">
-    <input type="search" value="" placeholder="search" class="topcoat-search-input is-disabled">
-
- */
+    <input type="search" value="" placeholder="search" class="topcoat-search-input" disabled>
+  tags:
+    - desktop
+    - light
+    - mobile
+    - text
+    - input
+    - search
+    - form
+*/
 .topcoat-search-input,
 .topcoat-search-input--large {
   padding: 0;
@@ -91,23 +96,28 @@ body {
 .topcoat-search-input:focus::-webkit-input-placeholder {
   color: #c6c8c8;
 }
-.topcoat-search-input:disabled,
-.topcoat-search-input.is-disabled {
+.topcoat-search-input:disabled {
   opacity: 0.3;
   cursor: default;
   pointer-events: none;
 }
-/*
- Large Search Input
- ------------------
-
- :disabled - Disabled state
-
- .is-disabled - Simulates a disabled state
-
-    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large">
-    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large is-disabled">
-
+/* topdoc
+  name: Large Search Input
+  description: A large text input designed for searching.
+  modifiers:
+    :disabled: Disabled state
+  markup:
+    <input type="search" value="" placeholder="search" class="topcoat-search-input--large">
+    <input type="search" value="" placeholder="search" class="topcoat-search-input--large" disabled>
+  tags:
+    - desktop
+    - light
+    - mobile
+    - text
+    - input
+    - search
+    - form
+    - large
 */
 .topcoat-search-input--large {
   height: 4rem;
@@ -118,8 +128,7 @@ body {
   background-position: 1.2em center;
   background-size: 1.3rem;
 }
-.topcoat-search-input--large:disabled,
-.topcoat-search-input--large.is-disabled {
+.topcoat-search-input--large:disabled {
   opacity: 0.3;
   cursor: default;
   pointer-events: none;

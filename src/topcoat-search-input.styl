@@ -16,19 +16,23 @@
 *
 */
 @import input-mixin
-
-/*
- Search Input
- ------------
-
- :disabled - Disabled state
-
- .is-disabled - Simulates a disabled state
-
+/* topdoc
+  name: Search Input
+  description: A text input designed for searching.
+  modifiers:
+    :disabled: Disabled state
+  markup:
     <input type="search" value="" placeholder="search" class="topcoat-search-input">
-    <input type="search" value="" placeholder="search" class="topcoat-search-input is-disabled">
-
- */
+    <input type="search" value="" placeholder="search" class="topcoat-search-input" disabled>
+  tags:
+    - desktop
+    - light
+    - mobile
+    - text
+    - input
+    - search
+    - form
+*/
 
 .topcoat-search-input
   input-base()
@@ -57,21 +61,25 @@
 .topcoat-search-input:focus::-webkit-input-placeholder
   color var-placeholder-color--input
 
-.topcoat-search-input:disabled,
-.topcoat-search-input.is-disabled
+.topcoat-search-input:disabled
   disabled()
-
-/*
- Large Search Input
- ------------------
-
- :disabled - Disabled state
-
- .is-disabled - Simulates a disabled state
-
-    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large">
-    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large is-disabled">
-
+/* topdoc
+  name: Large Search Input
+  description: A large text input designed for searching.
+  modifiers:
+    :disabled: Disabled state
+  markup:
+    <input type="search" value="" placeholder="search" class="topcoat-search-input--large">
+    <input type="search" value="" placeholder="search" class="topcoat-search-input--large" disabled>
+  tags:
+    - desktop
+    - light
+    - mobile
+    - text
+    - input
+    - search
+    - form
+    - large
 */
 
 .topcoat-search-input--large
@@ -87,7 +95,6 @@
 .topcoat-search-input--large:focus
   @extend .topcoat-search-input:focus
 
-.topcoat-search-input--large:disabled,
-.topcoat-search-input--large.is-disabled
+.topcoat-search-input--large:disabled
   disabled()
 

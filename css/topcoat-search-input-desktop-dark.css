@@ -20,7 +20,7 @@
 .topcoat-search-input--large {
   -webkit-appearance: none;
 }
-.search-input::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 /* topdoc

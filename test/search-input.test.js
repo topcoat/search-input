@@ -30,6 +30,24 @@ describe('Topcoat search-input', function() {
         assert.equal(actual, expected, 'should generate correct css');
     });
 
+    it('should output correct css', function() {
+        var actual = grunt.file.read('css/topcoat-search-input-desktop-light.css');
+        var expected = grunt.file.read('test/expected/topcoat-search-input-desktop-light.css');
+        assert.equal(actual, expected, 'should generate correct css');
+    });
+
+    it('should output correct css', function() {
+        var actual = grunt.file.read('css/topcoat-search-input-mobile-dark.css');
+        var expected = grunt.file.read('test/expected/topcoat-search-input-mobile-dark.css');
+        assert.equal(actual, expected, 'should generate correct css');
+    });
+
+    it('should output correct css', function() {
+        var actual = grunt.file.read('css/topcoat-search-input-mobile-light.css');
+        var expected = grunt.file.read('test/expected/topcoat-search-input-mobile-light.css');
+        assert.equal(actual, expected, 'should generate correct css');
+    });
+
     it('should not have any unrendered variables desktop dark', function() {
         var actual = grunt.file.read('css/topcoat-search-input-desktop-dark.css');
         assert.equal(actual.match(/var-[a-z-]*[a-z]+/g), null, 'should not have missing vars');

@@ -121,27 +121,6 @@ module.exports = function(grunt) {
             }
         },
 
-        copy: {
-            release: {
-                files: [{
-                    expand: true,
-                    flatten: true,
-                    src: 'node_modules/topcoat-theme/img/light-sprites2x.png',
-                    dest: 'img'
-                }]
-            }
-        },
-
-        jade: {
-            compile: {
-                expand: true,
-                cwd: 'test/perf',
-                src: ['*.jade'],
-                dest: 'test/perf/',
-                ext: '.test.html'
-            }
-        },
-
         simplemocha: {
             all: {
                 src: ['test/*.test.js']

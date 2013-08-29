@@ -37,12 +37,13 @@
 
 .topcoat-search-input
   @extend .search-input
-  height var-height
+  line-height var-height
+  font-size var-font-size
   border var-border
-  background-color var-background-color
+  background-color var-background-color--text-input
   box-shadow var-box-shadow--down
   color var-color
-  padding: 0 0 0 2.7em
+  padding: var-padding--search-input
   border-radius var-border-radius--large
   background-image var-background-image--search-input
   background-position 1em center
@@ -53,6 +54,8 @@
   background-image var-background-image-alt--search-input
   background-color var-background-color--text-input--focus
   color var-color--focus
+  border var-border--focus
+  box-shadow var-box-shadow--focus
 
 .topcoat-search-input::-webkit-search-cancel-button,
 .topcoat-search-input::-webkit-search-decoration,
@@ -63,6 +66,18 @@
 .topcoat-search-input:focus::-webkit-input-placeholder,
 .topcoat-search-input:focus::-webkit-input-placeholder
   color var-placeholder-color--input
+
+.topcoat-search-input:disabled
+  @extend .search-input:disabled
+
+.topcoat-search-input:disabled::-webkit-input-placeholder
+  color var-color--focus
+
+.topcoat-search-input:disabled::-moz-placeholder
+  color var-color--focus
+
+.topcoat-search-input:disabled:-ms-input-placeholder
+  color var-color--focus
 
 /* topdoc
   name: Large Search Input
@@ -85,13 +100,26 @@
 
 .topcoat-search-input--large
   @extend .topcoat-search-input
-  height var-height--large
+  line-height var-height--large
   font-size var-font-size--large
   font-weight var-font-weight
-  padding-left 2.8em
+  padding var-padding--search-input--large
   border-radius var-border-radius--huge
   background-position 1.2em center
   background-size var-font-size--large
 
 .topcoat-search-input--large:focus
   @extend .topcoat-search-input:focus
+
+.topcoat-search-input--large:disabled
+  @extend .search-input:disabled
+  color var-color--focus
+
+.topcoat-search-input--large:disabled::-webkit-input-placeholder
+  color var-color--focus
+
+.topcoat-search-input--large:disabled::-moz-placeholder
+  color var-color--focus
+
+.topcoat-search-input--large:disabled:-ms-input-placeholder
+  color var-color--focus

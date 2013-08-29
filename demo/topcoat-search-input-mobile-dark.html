@@ -66,13 +66,14 @@
                   <h3>CSS</h3>
                   <pre class="css"><code data-language="css">.topcoat-search-input,
 .topcoat-search-input--large {
-  height: 3rem;
+  line-height: 3rem;
+  font-size: 16px;
   border: 1px solid #303233;
-  background-color: #595b5b;
+  background-color: #404141;
   -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
   box-shadow: inset 0 1px rgba(0,0,0,0.18);
   color: #c6c8c8;
-  padding: 0 0 0 2.7em;
+  padding: 0 0 0 2rem;
   -webkit-border-radius: 30px;
   border-radius: 30px;
   background-image: url(&quot;../img/search.svg&quot;);
@@ -87,6 +88,9 @@
   background-image: url(&quot;../img/search_dark.svg&quot;);
   background-color: #646666;
   color: #fff;
+  border: 1px solid #0940fd;
+  -webkit-box-shadow: 0 0 0 2px #6fb5f1;
+  box-shadow: 0 0 0 2px #6fb5f1;
 }
 .topcoat-search-input::-webkit-search-cancel-button,
 .topcoat-search-input::-webkit-search-decoration,
@@ -97,6 +101,15 @@
 .topcoat-search-input:focus::-webkit-input-placeholder,
 .topcoat-search-input:focus::-webkit-input-placeholder {
   color: #c6c8c8;
+}
+.topcoat-search-input:disabled::-webkit-input-placeholder {
+  color: #fff;
+}
+.topcoat-search-input:disabled::-moz-placeholder {
+  color: #fff;
+}
+.topcoat-search-input:disabled:-ms-input-placeholder {
+  color: #fff;
 }</code></pre>
                 </div>
               </section>
@@ -117,16 +130,28 @@
                 <div>
                   <h3>CSS</h3>
                   <pre class="css"><code data-language="css">.topcoat-search-input--large {
-  height: 4.375rem;
+  line-height: 4.375rem;
   font-size: 1.3rem;
   font-weight: 200;
-  padding-left: 2.8em;
+  padding: 0 0 0 2.9rem;
   -webkit-border-radius: 40px;
   border-radius: 40px;
   background-position: 1.2em center;
   -webkit-background-size: 1.3rem;
   -moz-background-size: 1.3rem;
   background-size: 1.3rem;
+}
+.topcoat-search-input--large:disabled {
+  color: #fff;
+}
+.topcoat-search-input--large:disabled::-webkit-input-placeholder {
+  color: #fff;
+}
+.topcoat-search-input--large:disabled::-moz-placeholder {
+  color: #fff;
+}
+.topcoat-search-input--large:disabled:-ms-input-placeholder {
+  color: #fff;
 }
 </code></pre>
                 </div>

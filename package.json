@@ -2,7 +2,6 @@
   "name": "topcoat-search-input",
   "version": "0.2.1",
   "description": "Topcoat search input",
-  "main": "demo/index.html",
   "directories": {
     "test": "test",
     "lib": "src",

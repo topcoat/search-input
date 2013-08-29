@@ -96,6 +96,7 @@ module.exports = function(grunt) {
                 }
             }
         },
+
         cssmin: {
             minify: {
                 expand: true,
@@ -103,21 +104,6 @@ module.exports = function(grunt) {
                 src: ['*.css', '!*.min.css'],
                 dest: 'release/css/',
                 ext: '.min.css'
-            }
-        },
-
-        topdoc: {
-            usageguides: {
-                options: {
-                    source: 'css',
-                    destination: "demo",
-                    template: "node_modules/topdoc-theme/",
-                    templateData: {
-                      "title": "Topcoat",
-                      "subtitle": "CSS for clean and fast web apps",
-                      "homeURL": "http://topcoat.io"
-                    }
-                }
             }
         },
 

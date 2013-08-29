@@ -96,6 +96,7 @@ module.exports = function(grunt) {
                 }
             }
         },
+
         cssmin: {
             minify: {
                 expand: true,
@@ -103,42 +104,6 @@ module.exports = function(grunt) {
                 src: ['*.css', '!*.min.css'],
                 dest: 'release/css/',
                 ext: '.min.css'
-            }
-        },
-
-        topdoc: {
-            usageguides: {
-                options: {
-                    source: 'css',
-                    destination: "demo",
-                    template: "node_modules/topdoc-theme/",
-                    templateData: {
-                      "title": "Topcoat",
-                      "subtitle": "CSS for clean and fast web apps",
-                      "homeURL": "http://topcoat.io"
-                    }
-                }
-            }
-        },
-
-        copy: {
-            release: {
-                files: [{
-                    expand: true,
-                    flatten: true,
-                    src: 'node_modules/topcoat-theme/img/light-sprites2x.png',
-                    dest: 'img'
-                }]
-            }
-        },
-
-        jade: {
-            compile: {
-                expand: true,
-                cwd: 'test/perf',
-                src: ['*.jade'],
-                dest: 'test/perf/',
-                ext: '.test.html'
             }
         },
 

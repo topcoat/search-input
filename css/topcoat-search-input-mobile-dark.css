@@ -64,6 +64,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .topcoat-search-input,
 .topcoat-search-input--large {
   line-height: 3rem;
+  height: 3rem;
   font-size: 16px;
   border: 1px solid #303233;
   background-color: #404141;
@@ -74,7 +75,7 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-border-radius: 30px;
   border-radius: 30px;
   background-image: url("../img/search.svg");
-  background-position: 1em center;
+  background-position: 0.5em center;
   background-repeat: no-repeat;
   -webkit-background-size: 16px;
   -moz-background-size: 16px;
@@ -128,12 +129,13 @@ input[type="search"]::-webkit-search-cancel-button {
 */
 .topcoat-search-input--large {
   line-height: 4.375rem;
+  height: 4.375rem;
   font-size: 1.3rem;
   font-weight: 200;
   padding: 0 0 0 2.9rem;
   -webkit-border-radius: 40px;
   border-radius: 40px;
-  background-position: 1.2em center;
+  background-position: 0.6em center;
   -webkit-background-size: 1.3rem;
   -moz-background-size: 1.3rem;
   background-size: 1.3rem;

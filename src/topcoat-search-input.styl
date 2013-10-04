@@ -38,6 +38,7 @@
 .topcoat-search-input
   @extend .search-input
   line-height var-height
+  height var-height
   font-size var-font-size
   border var-border
   background-color var-background-color--text-input
@@ -46,7 +47,7 @@
   padding: var-padding--search-input
   border-radius var-border-radius--large
   background-image var-background-image--search-input
-  background-position 1em center
+  background-position .6rem center
   background-repeat no-repeat
   background-size var-font-size
 
@@ -101,11 +102,12 @@
 .topcoat-search-input--large
   @extend .topcoat-search-input
   line-height var-height--large
+  height var-height--large
   font-size var-font-size--large
   font-weight var-font-weight
   padding var-padding--search-input--large
   border-radius var-border-radius--huge
-  background-position 1.2em center
+  background-position .6rem center
   background-size var-font-size--large
 
 .topcoat-search-input--large:focus

@@ -83,7 +83,7 @@ module.exports = function(grunt) {
             usageguides: {
                 options: {
                     source: 'css',
-                    destination: "demo",
+                    destination: 'demo',
                     template: "node_modules/topdoc-theme/",
                     templateData: {
                       "title": "Topcoat",
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
               expand: true,
               cwd: 'css',
               src: ['*.css', '!*.min.css'],
-              dest: 'css/'
+              dest: 'css'
             }]
           }
         },

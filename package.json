@@ -1,6 +1,6 @@
 {
   "name": "topcoat-search-input",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Topcoat search input",
   "main": "index.html",
   "style": "src/search-input.css",

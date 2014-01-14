@@ -49,13 +49,12 @@ module.exports = function(grunt) {
             usageguides: {
                 options: {
                     source: 'css',
-                    destination: "demo",
+                    destination: "./",
                     template: "node_modules/topdoc-theme/",
                     templateData: {
                       "title": "Topcoat",
                       "subtitle": "CSS for clean and fast web apps",
-                      "homeURL": "http://topcoat.io",
-                      "debug": true
+                      "homeURL": "http://topcoat.io"
                     },
                 }
             }

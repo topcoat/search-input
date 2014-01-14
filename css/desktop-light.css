@@ -15,8 +15,39 @@
 * limitations under the License.
 *
 */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url('../font/SourceSansPro-Regular.otf');
+}
 
-.search-input,
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url('../font/SourceSansPro-Light.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url('../font/SourceSansPro-Semibold.otf');
+  font-weight: 600;
+}
+
+body {
+  font: 12px "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: hsla(180, 5%, 88%, 1);
+}
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
 .topcoat-search-input,
 .topcoat-search-input--large {
   padding: 0;
@@ -25,26 +56,44 @@
   color: inherit;
   background: transparent;
   border: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+}
+
+.topcoat-search-input,
+.topcoat-search-input--large {
   vertical-align: top;
   outline: none;
+}
+
+.topcoat-search-input,
+.topcoat-search-input--large {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.topcoat-search-input:disabled,
+.topcoat-search-input--large:disabled,
+.topcoat-search-input--large:disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* topdoc
+  name: Search Input base
+  markup:
+    <input type="search" class="search-input" placeholder="search">
+  example:
+    http://codepen.io/Topcoat/pen/Kgbtn
+*/
+
+.topcoat-search-input,
+.topcoat-search-input--large {
   -webkit-appearance: none;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
-}
-
-.search-input:disabled,
-.topcoat-search-input:disabled,
-.topcoat-search-input--large:disabled {
-  opacity: 0.3;
-  cursor: default;
-  pointer-events: none;
 }
 
 /* topdoc
@@ -70,51 +119,61 @@ input[type="search"]::-webkit-search-cancel-button {
   line-height: 1.313rem;
   height: 1.313rem;
   font-size: 12px;
-  border: 1px solid #9daca9;
-  background-color: #fff;
-  -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.23);
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.23);
-  color: #454545;
+  border: 1px solid hsla(168, 8%, 65%, 1);
+  background-color: hsla(0, 100%, 100%, 1);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 0%, 0.23);
+  color: hsla(0, 0%, 27%, 1);
   padding: 0 0 0 1.3rem;
   border-radius: 15px;
   background-image: url("../img/search.svg");
   background-position: 1rem center;
   background-repeat: no-repeat;
-  -webkit-background-size: 12px;
   background-size: 12px;
 }
 
 .topcoat-search-input:focus,
+.topcoat-search-input--large:focus,
 .topcoat-search-input--large:focus {
-  background-color: #fff;
-  color: #454545;
-  border: 1px solid #0036ff;
-  -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.23), 0 0 0 2px #6fb5f1;
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.23), 0 0 0 2px #6fb5f1;
+  background-color: hsla(0, 100%, 100%, 1);
+  color: hsla(0, 0%, 27%, 1);
+  border: 1px solid hsla(227, 100%, 50%, 1);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 0%, 0.23), 0 0 0 2px hsla(208, 82%, 69%, 1);
 }
 
 .topcoat-search-input::-webkit-search-cancel-button,
 .topcoat-search-input::-webkit-search-decoration,
+.topcoat-search-input--large::-webkit-search-cancel-button,
+.topcoat-search-input--large::-webkit-search-decoration,
 .topcoat-search-input--large::-webkit-search-cancel-button,
 .topcoat-search-input--large::-webkit-search-decoration {
   margin-right: 5px;
 }
 
 .topcoat-search-input:focus::-webkit-input-placeholder,
-.topcoat-search-input:focus::-webkit-input-placeholder {
-  color: #c6c8c8;
+.topcoat-search-input:focus::-webkit-input-placeholder,
+.topcoat-search-input--large:focus::-webkit-input-placeholder,
+.topcoat-search-input--large:focus::-webkit-input-placeholder,
+.topcoat-search-input--large:focus::-webkit-input-placeholder,
+.topcoat-search-input--large:focus::-webkit-input-placeholder {
+  color: hsla(0, 0%, 66%, 1);
 }
 
-.topcoat-search-input:disabled::-webkit-input-placeholder {
-  color: #454545;
+.topcoat-search-input:disabled::-webkit-input-placeholder,
+.topcoat-search-input--large:disabled::-webkit-input-placeholder,
+.topcoat-search-input--large:disabled::-webkit-input-placeholder {
+  color: hsla(0, 0%, 27%, 1);
 }
 
-.topcoat-search-input:disabled::-moz-placeholder {
-  color: #454545;
+.topcoat-search-input:disabled::-moz-placeholder,
+.topcoat-search-input--large:disabled::-moz-placeholder,
+.topcoat-search-input--large:disabled::-moz-placeholder {
+  color: hsla(0, 0%, 27%, 1);
 }
 
-.topcoat-search-input:disabled:-ms-input-placeholder {
-  color: #454545;
+.topcoat-search-input:disabled:-ms-input-placeholder,
+.topcoat-search-input--large:disabled:-ms-input-placeholder,
+.topcoat-search-input--large:disabled:-ms-input-placeholder {
+  color: hsla(0, 0%, 27%, 1);
 }
 
 /* topdoc
@@ -144,22 +203,21 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 0 0 0 1.8rem;
   border-radius: 25px;
   background-position: 1.2rem center;
-  -webkit-background-size: 0.875rem;
   background-size: 0.875rem;
 }
 
 .topcoat-search-input--large:disabled {
-  color: #454545;
+  color: hsla(0, 0%, 27%, 1);
 }
 
 .topcoat-search-input--large:disabled::-webkit-input-placeholder {
-  color: #454545;
+  color: hsla(0, 0%, 27%, 1);
 }
 
 .topcoat-search-input--large:disabled::-moz-placeholder {
-  color: #454545;
+  color: hsla(0, 0%, 27%, 1);
 }
 
 .topcoat-search-input--large:disabled:-ms-input-placeholder {
-  color: #454545;
+  color: hsla(0, 0%, 27%, 1);
 }
